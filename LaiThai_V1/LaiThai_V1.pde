@@ -1,12 +1,12 @@
 void setup()
 {
-  size(800,600);
+  size(675,600);
   smooth();
 }
 
 void draw()
 {
-  background(255);
+  background(0);
   
   // Loop draw LaiThai
   for(int i=0; i<=height; i=i+150)
@@ -14,6 +14,7 @@ void draw()
     for(int j=0; j<=width; j=j+150)
     {
       drawLaiThai(i,j,0.5);
+      delay(100);
     }
   }
   
@@ -35,5 +36,4 @@ void drawLaiThai(int x,int y,float sF)
   // Central circles
   ellipse(x,y,80*sF,80*sF); // Outter 
   ellipse(x,y,40*sF,40*sF); // Inner
-  
 }
